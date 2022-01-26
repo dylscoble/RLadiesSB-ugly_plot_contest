@@ -8,6 +8,7 @@ sweaters <- read_csv(here::here("data/use_this_data", "holiday_sweaters-2020-12-
   group_by(colors) %>% 
   summarize(sum = length(colors))
 
+
 ggplot(sweaters, aes(x = colors, y = sum)) +
   geom_col(aes(color = colors, fill = colors)) +
   scale_fill_manual(values = c("mediumorchid1", "lightyellow3", "salmon3", "salmon2", "slateblue4", "yellowgreen", "lawngreen", "tan", "ivory", "khaki2", "chocolate", "blue1", "darkkhaki", "forestgreen", "firebrick3", "goldenrod1", "grey0", "lightblue1", "honeydew2", "olivedrab", "ghostwhite")) +
