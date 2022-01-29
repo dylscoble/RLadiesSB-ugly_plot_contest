@@ -19,4 +19,4 @@ ggplot(data=sweaters, aes(x = hs_tf)) +
         strip.text = element_text(color = "#8c6f0f"),
         legend.background = element_rect(fill = "orange"))
 
-ggsave(here::here("figures/an-plot.jpg"), width = 7, height = 4, dpi = 150)
+ggsave(here::here("figures/an-plot.pdf"), width = 7, height = 4, dpi = 150)
